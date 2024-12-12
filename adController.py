@@ -8,19 +8,13 @@ def connection_Status():
     return connection 
 
 
-
-
 def set_Throttle(throttleValue):
-    successValue = True
-    rpm =throttleValue
-
+    print("Throttle : "+str(throttleValue))
 
 def set_ThroatAperture(throatValue):
-    successValue = True
     print("Throat Aperture :"+str(throatValue))
     
 def set_ExitAperture(exitValue):
-    successValue = True
     print("Exit Aperture :"+str(exitValue))
 
 
@@ -35,14 +29,23 @@ def get_EGT():
 
 
 
-def set_afterBurner(afterBurnerValue):
-    return afterBurnerValue
-
-def set_afterBurnerFuelPump(afterBurnerFuelPumpValue):
-    return afterBurnerFuelPumpValue
+def set_fuelPump(fuelPumpValue):
+    print ("Fuel Pump State: ", fuelPumpValue)
+    return fuelPumpValue
 
 def set_engine(engineValue):
+    print ("Engine State: ", engineValue)
     return engineValue
 
-def set_fuelPump(fuelPumpValue):
-    return fuelPumpValue
+def set_afterBurnerFuelPump(afterBurnerFuelPumpValue):
+    print ("AfterBurner Fuel Pump State: ", afterBurnerFuelPumpValue)
+    return afterBurnerFuelPumpValue
+
+def set_afterBurner(afterBurnerValue):
+    print ("AfterBurner State: ", afterBurnerValue)
+    return afterBurnerValue
+
+
+
+
+
