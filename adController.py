@@ -1,6 +1,7 @@
+import random
 import serial 
 
-#
+
 
 def connection_Status():
     connection = True
@@ -11,18 +12,26 @@ def connection_Status():
 
 def set_Throttle(throttleValue):
     successValue = True
-    return successValue
+    rpm =throttleValue
 
-def set_NApercent(NA_value):
+
+def set_ThroatAperture(throatValue):
     successValue = True
+    print("Throat Aperture :"+str(throatValue))
     
-
-
-def set_CantileverPosition(positionValue):
+def set_ExitAperture(exitValue):
     successValue = True
-    return successValue
+    print("Exit Aperture :"+str(exitValue))
 
 
+
+def get_RPM():
+    rpm = random.randint(0,10000)
+    return rpm
+
+def get_EGT():
+    egt = random.randint(0,1200)
+    return egt
 
 
 
